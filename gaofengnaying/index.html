@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="高峰那英 - 中国内地流行乐女歌手、影视演员。本站收录那英代表作品、经典金曲、演艺经历及最新动态，提供高清MV与专辑信息查询。">
+    <meta name="keywords" content="高峰那英,那英,歌手那英,那英经典歌曲,那英演艺经历,那英最新动态">
+    <title>高峰那英-华语乐坛天后经典金曲与演艺经历全收录</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #c8102e;
+            --secondary-color: #1a1a1a;
+            --accent-color: #f5f5f5;
+            --text-color: #333333;
+            --text-light: #666666;
+            --bg-light: #f9f9f9;
+            --border-radius: 8px;
+            --container-width: 1200px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Layout */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--secondary-color);
+            position: relative;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: #fff;
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            color: #fff;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+            margin-left: 15px;
+        }
+
+        .btn-outline:hover {
+            background-color: #fff;
+            color: var(--secondary-color);
+        }
+
+        /* Intro Section */
+        .intro {
+            padding: 60px 0;
+            background-color: var(--bg-light);
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .intro-text h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .intro-text p {
+            color: var(--text-light);
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            font-weight: 800;
+        }
+
+        .stat-item p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        .intro-image img {
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Songs Section */
+        .songs-section {
+            padding: 80px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+
+        .section-header .line {
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 0 auto;
+        }
+
+        .song-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .song-card {
+            background: #fff;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            border: 1px solid #eee;
+        }
+
+        .song-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .song-cover {
+            height: 200px;
+            position: relative;
+        }
+
+        .song-cover img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .play-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .song-card:hover .play-overlay {
+            opacity: 1;
+        }
+
+        .play-icon {
+            font-size: 40px;
+            color: #fff;
+        }
+
+        .song-info {
+            padding: 20px;
+        }
+
+        .song-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .song-album {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            padding: 80px 0;
+            background-color: var(--bg-light);
+        }
+
+        .timeline-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #ddd;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: #fff;
+            border: 4px solid var(--primary-color);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent #fff;
+        }
+
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #fff transparent transparent;
+        }
+
+        .right::after {
+            left: -10px;
+        }
+
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: #fff;
+            position: relative;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .timeline-year {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .timeline-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .timeline-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Awards Section */
+        .awards-section {
+            padding: 80px 0;
+        }
+
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .award-card {
+            text-align: center;
+            padding: 30px;
+            border: 1px solid #eee;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .award-card:hover {
+            border-color: var(--primary-color);
+            background-color: #fffafa;
+        }
+
+        .award-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .award-name {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .award-year {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: #fff;
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 30px;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+            padding-left: 5px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .intro-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-container::after {
+                left: 31px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .timeline-item::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent #fff transparent transparent;
+            }
+
+            .left::after, .right::after {
+                left: 21px;
+            }
+
+            .right {
+                left: 0%;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: #fff;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18V5l12-2v13"></path>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <circle cx="18" cy="16" r="3"></circle>
+                </svg>
+                高峰<span>那英</span>
+            </a>
+            <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#intro">人物简介</a></li>
+                    <li><a href="#songs">经典金曲</a></li>
+                    <li><a href="#career">演艺经历</a></li>
+                    <li><a href="#awards">荣誉成就</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>华语乐坛天后</h1>
+            <p>从《征服》到《默》，那英用实力诠释流行音乐的魅力，见证中国乐坛三十余年的变迁与辉煌。</p>
+            <div class="hero-btns">
+                <a href="#songs" class="btn btn-primary">聆听经典</a>
+                <a href="#intro" class="btn btn-outline">了解更多</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro" id="intro">
+        <div class="container intro-grid">
+            <div class="intro-text">
+                <h2>关于那英</h2>
+                <p>那英，1967年11月27日出生于辽宁省沈阳市，中国内地流行乐女歌手、影视演员、音乐制作人。她是中国大陆流行乐坛极具影响力的女歌手之一，以其独特的嗓音、强大的舞台表现力和深情的演唱风格著称。</p>
+                <p>作为华语乐坛的“天后”级人物，那英发行了多张传唱度极高的专辑，如《征服》、《白天不懂夜的黑》、《默》等。她不仅在音乐领域取得了卓越成就，还活跃于影视领域，参演了多部热门影视剧，展现了多才多艺的一面。</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>30+</h3>
+                        <p>年音乐生涯</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>20+</h3>
+                        <p>张畅销专辑</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>项重要奖项</p>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-image">
+                <img src="https://picsum.photos/seed/naying_intro/600/400" alt="那英人物写真">
+            </div>
+        </div>
+    </section>
+
+    <section class="songs-section" id="songs">
+        <div class="container">
+            <div class="section-header">
+                <h2>经典代表作品</h2>
+                <div class="line"></div>
+            </div>
+            <div class="song-grid">
+                <article class="song-card">
+                    <div class="song-cover">
+                        <img src="https://picsum.photos/seed/song1/400/300" alt="征服">
+                        <div class="play-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="song-info">
+                        <h3 class="song-title">征服</h3>
+                        <p class="song-album">《征服》专辑 (1998)</p>
+                    </div>
+                </article>
+
+                <article class="song-card">
+                    <div class="song-cover">
+                        <img src="https://picsum.photos/seed/song2/400/300" alt="默">
+                        <div class="play-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="song-info">
+                        <h3 class="song-title">默</h3>
+                        <p class="song-album">《默》单曲 (2014)</p>
+                    </div>
+                </article>
+
+                <article class="song-card">
+                    <div class="song-cover">
+                        <img src="https://picsum.photos/seed/song3/400/300" alt="白天不懂夜的黑">
+                        <div class="play-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="song-info">
+                        <h3 class="song-title">白天不懂夜的黑</h3>
+                        <p class="song-album">《白天不懂夜的黑》专辑 (1996)</p>
+                    </div>
+                </article>
+
+                <article class="song-card">
+                    <div class="song-cover">
+                        <img src="https://picsum.photos/seed/song4/400/300" alt="山不转水转">
+                        <div class="play-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="song-info">
+                        <h3 class="song-title">山不转水转</h3>
+                        <p class="song-album">同名专辑 (1990)</p>
+                    </div>
+                </article>
+                
+                <article class="song-card">
+                    <div class="song-cover">
+                        <img src="https://picsum.photos/seed/song5/400/300" alt="梦一场">
+                        <div class="play-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="song-info">
+                        <h3 class="song-title">梦一场</h3>
+                        <p class="song-album">《梦一场》专辑 (2000)</p>
+                    </div>
+                </article>
+
+                <article class="song-card">
+                    <div class="song-cover">
+                        <img src="https://picsum.photos/seed/song6/400/300" alt="雾里看花">
+                        <div class="play-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="song-info">
+                        <h3 class="song-title">雾里看花</h3>
+                        <p class="song-album">《山不转水转》专辑 (1990)</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline-section" id="career">
+        <div class="container">
+            <div class="section-header">
+                <h2>演艺经历</h2>
+                <div class="line"></div>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1990</div>
+                        <h3 class="timeline-title">出道成名</h3>
+                        <p class="timeline-desc">凭借歌曲《山不转水转》获得全国青年歌手电视大奖赛亚军，正式进入大众视野，随后发行同名专辑。</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1998</div>
+                        <h3 class="timeline-title">巅峰时期</h3>
+                        <p class="timeline-desc">专辑《征服》横扫各大音乐排行榜，主打歌《征服》传唱度极高，确立其华语乐坛一姐地位。</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2000</div>
+                        <h3 class="timeline-title">风格转型</h3>
+                        <p class="timeline-desc">发行专辑《梦一场》，音乐风格更加成熟内敛，展现了与以往不同的音乐质感。</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2014</div>
+                        <h3 class="timeline-title">影视跨界</h3>
+                        <p class="timeline-desc">演唱电影《何以笙箫默》主题曲《默》，该歌曲获得广泛好评，并入围多项音乐奖项。</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2018</div>
+                        <h3 class="timeline-title">跨界歌手</h3>
+                        <p class="timeline-desc">参加湖南卫视《歌手2018》，以歌手身份回归大众视野，展现了强大的现场演唱实力。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="awards-section" id="awards">
+        <div class="container">
+            <div class="section-header">
+                <h2>荣誉成就</h2>
+                <div class="line"></div>
+            </div>
+            <div class="awards-grid">
+                <div class="award-card">
+                    <div class="award-icon">🏆</div>
+                    <div class="award-name">全球华语音乐榜中榜</div>
+                    <div class="award-year">内地最佳女歌手</div>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon">🎤</div>
+                    <div class="award-name">MTV音乐盛典</div>
+                    <div class="award-year">亚洲最受欢迎歌手</div>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon">💿</div>
+                    <div class="award-name">华语音乐传媒大奖</div>
+                    <div class="award-year">最佳女歌手</div>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon">⭐</div>
+                    <div class="award-name">中国金唱片奖</div>
+                    <div class="award-year">流行类最佳歌手</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>高峰那英</h4>
+                    <p style="color: #aaa; font-size: 0.9rem;">专注于华语流行音乐，提供最全面的那英资料、歌曲下载及最新资讯。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">人物简介</a></li>
+                        <li><a href="#">经典歌曲</a></li>
+                        <li><a href="#">演艺经历</a></li>
+                        <li><a href="#">影视作品</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>版权信息</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">免责声明</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 高峰那英资料站 版权所有. 本站内容仅供展示与交流，非官方网站。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // 简单的平滑滚动效果
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // 如果是移动端菜单打开状态，点击后关闭
+                    const navMenu = document.getElementById('navMenu');
+                    if (navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                    }
+                    
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+  </html>
