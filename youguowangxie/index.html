@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尤果网写真-精选美女写真图片与高清摄影作品赏析</title>
+    <meta name="description" content="尤果网写真栏目提供最新、最全的美女写真图片资源。收录高清写真摄影作品，涵盖私房、街拍、艺术人像等多种风格，为摄影爱好者与审美鉴赏提供丰富的视觉参考。">
+    <meta name="keywords" content="尤果网写真,美女写真,高清写真,私房摄影,人像摄影,摄影作品赏析">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #d63384;
+            --secondary-color: #6f42c1;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #212529;
+            --text-sub: #6c757d;
+            --border-color: #e9ecef;
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 24px;
+            --spacing-xl: 32px;
+            --radius: 8px;
+            --shadow: 0 4px 6px rgba(0,0,0,0.05);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-md) var(--spacing-lg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: var(--spacing-lg);
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-main);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            padding: var(--spacing-xl) var(--spacing-lg);
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-md);
+            color: var(--text-main);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-sub);
+            max-width: 700px;
+            margin: 0 auto var(--spacing-lg);
+        }
+
+        .search-bar {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            background: var(--card-bg);
+            padding: 8px;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border: 1px solid var(--border-color);
+        }
+
+        .search-bar input {
+            flex: 1;
+            border: none;
+            padding: 0 var(--spacing-md);
+            outline: none;
+            font-size: 1rem;
+            border-radius: 50px;
+        }
+
+        .search-bar button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 40px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .search-bar button:hover {
+            background-color: #c02b6f;
+        }
+
+        /* Main Content */
+        .main-container {
+            max-width: 1200px;
+            margin: var(--spacing-xl) auto;
+            padding: 0 var(--spacing-lg);
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: var(--spacing-xl);
+        }
+
+        /* Gallery Grid */
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-lg);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 12px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .photo-card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .photo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+        }
+
+        .card-image-wrapper {
+            position: relative;
+            padding-top: 133.33%; /* 3:4 Aspect Ratio */
+            overflow: hidden;
+            background-color: #eee;
+        }
+
+        .card-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .photo-card:hover .card-image {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: var(--spacing-md);
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: var(--spacing-sm);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--text-sub);
+        }
+
+        .tag {
+            background-color: #f1f3f5;
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: var(--text-sub);
+            font-size: 0.75rem;
+        }
+
+        /* Sidebar */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-xl);
+        }
+
+        .sidebar-widget {
+            background: var(--card-bg);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .widget-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-md);
+            padding-bottom: var(--spacing-sm);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .category-list li {
+            margin-bottom: 8px;
+        }
+
+        .category-list a {
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-sub);
+            transition: var(--transition);
+        }
+
+        .category-list a:hover {
+            color: var(--primary-color);
+            padding-left: 5px;
+        }
+
+        .trend-list li {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .trend-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+
+        .trend-info {
+            flex: 1;
+        }
+
+        .trend-info h4 {
+            font-size: 0.9rem;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+
+        .trend-info span {
+            font-size: 0.75rem;
+            color: var(--text-sub);
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: var(--spacing-xl);
+        }
+
+        .page-item {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--card-bg);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .page-item.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .page-item:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: #adb5bd;
+            padding: var(--spacing-xl) var(--spacing-lg);
+            margin-top: var(--spacing-xl);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-xl);
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: var(--spacing-md);
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: var(--spacing-xl);
+            padding-top: var(--spacing-lg);
+            border-top: 1px solid #495057;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                padding: var(--spacing-sm) var(--spacing-md);
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--card-bg);
+                padding: var(--spacing-md);
+                box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">尤果网<span>写真</span></a>
+            <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">高清写真</a></li>
+                    <li><a href="#">私房摄影</a></li>
+                    <li><a href="#">街拍</a></li>
+                    <li><a href="#">摄影教程</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>探索视觉艺术之美</h1>
+        <p>汇聚全球优质摄影作品，提供高清写真图片资源与专业的审美鉴赏指南，让每一次浏览都成为视觉享受。</p>
+        <div class="search-bar">
+            <input type="text" placeholder="搜索你喜欢的写真风格或关键词...">
+            <button>搜索</button>
+        </div>
+    </section>
+
+    <main class="main-container">
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <h2 class="section-title">最新收录</h2>
+            
+            <div class="gallery-grid">
+                <!-- Photo Card 1 -->
+                <article class="photo-card">
+                    <a href="#">
+                        <div class="card-image-wrapper">
+                            <img src="https://picsum.photos/seed/ug1/400/533" alt="午后阳光下的慵懒私房写真" class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">午后阳光下的慵懒私房写真</h3>
+                            <div class="card-meta">
+                                <span class="tag">私房</span>
+                                <span>128张</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Photo Card 2 -->
+                <article class="photo-card">
+                    <a href="#">
+                        <div class="card-image-wrapper">
+                            <img src="https://picsum.photos/seed/ug2/400/533" alt="都市夜色下的时尚街拍" class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">都市夜色下的时尚街拍</h3>
+                            <div class="card-meta">
+                                <span class="tag">街拍</span>
+                                <span>86张</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Photo Card 3 -->
+                <article class="photo-card">
+                    <a href="#">
+                        <div class="card-image-wrapper">
+                            <img src="https://picsum.photos/seed/ug3/400/533" alt="艺术感十足的人像摄影" class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">艺术感十足的人像摄影</h3>
+                            <div class="card-meta">
+                                <span class="tag">人像</span>
+                                <span>200张</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Photo Card 4 -->
+                <article class="photo-card">
+                    <a href="#">
+                        <div class="card-image-wrapper">
+                            <img src="https://picsum.photos/seed/ug4/400/533" alt="清新自然的森系风格" class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">清新自然的森系风格</h3>
+                            <div class="card-meta">
+                                <span class="tag">森系</span>
+                                <span>95张</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Photo Card 5 -->
+                <article class="photo-card">
+                    <a href="#">
+                        <div class="card-image-wrapper">
+                            <img src="https://picsum.photos/seed/ug5/400/533" alt="复古胶片质感写真" class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">复古胶片质感写真</h3>
+                            <div class="card-meta">
+                                <span class="tag">复古</span>
+                                <span>150张</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Photo Card 6 -->
+                <article class="photo-card">
+                    <a href="#">
+                        <div class="card-image-wrapper">
+                            <img src="https://picsum.photos/seed/ug6/400/533" alt="简约现代家居写真" class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">简约现代家居写真</h3>
+                            <div class="card-meta">
+                                <span class="tag">家居</span>
+                                <span>112张</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="page-item active">1</a>
+                <a href="#" class="page-item">2</a>
+                <a href="#" class="page-item">3</a>
+                <a href="#" class="page-item">...</a>
+                <a href="#" class="page-item">10</a>
+            </div>
+        </section>
+
+        <!-- Sidebar Section -->
+        <aside>
+            <!-- Category Widget -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title">写真分类</h3>
+                <ul class="category-list">
+                    <li><a href="#">全部作品 <span>2,540</span></a></li>
+                    <li><a href="#">高清私房 <span>890</span></a></li>
+                    <li><a href="#">时尚街拍 <span>620</span></a></li>
+                    <li><a href="#">艺术人像 <span>430</span></a></li>
+                    <li><a href="#">森系清新 <span>310</span></a></li>
+                    <li><a href="#">复古胶片 <span>280</span></a></li>
+                    <li><a href="#">职场通勤 <span>150</span></a></li>
+                    <li><a href="#">胶片风格 <span>120</span></a></li>
+                </ul>
+            </div>
+
+            <!-- Hot Trends Widget -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title">热门趋势</h3>
+                <ul class="trend-list">
+                    <li>
+                        <img src="https://picsum.photos/seed/trend1/100/100" alt="热门" class="trend-img">
+                        <div class="trend-info">
+                            <h4><a href="#">2024夏季流行色彩搭配</a></h4>
+                            <span>2.3万浏览</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://picsum.photos/seed/trend2/100/100" alt="热门" class="trend-img">
+                        <div class="trend-info">
+                            <h4><a href="#">私房摄影布光技巧解析</a></h4>
+                            <span>1.8万浏览</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://picsum.photos/seed/trend3/100/100" alt="热门" class="trend-img">
+                        <div class="trend-info">
+                            <h4><a href="#">如何拍摄出日系清新感</a></h4>
+                            <span>1.5万浏览</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Ad Placeholder -->
+            <div class="sidebar-widget" style="text-align: center; background: #e9ecef; min-height: 200px; display: flex; align-items: center; justify-content: center; color: #6c757d;">
+                广告位
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>关于尤果网</h4>
+                <p style="font-size: 0.9rem; line-height: 1.8;">尤果网写真致力于为摄影爱好者和审美鉴赏者提供高质量的图片资源与视觉体验。我们专注于收集与分享各类风格独特的写真作品。</p>
+            </div>
+            <div class="footer-col">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="#">网站地图</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">免责声明</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>联系方式</h4>
+                <ul>
+                    <li>投稿邮箱: contact@ug.com</li>
+                    <li>商务合作: business@ug.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 尤果网写真 版权所有. 本站内容仅供个人欣赏与学习交流使用.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('nav-list');
+            navList.classList.toggle('show');
+        }
+
+        // Simple interaction for search button
+        document.querySelector('.search-bar button').addEventListener('click', function() {
+            const input = document.querySelector('.search-bar input');
+            if(input.value.trim() !== "") {
+                alert('正在搜索: ' + input.value);
+                input.value = '';
+            }
+        });
+    </script>
+</body>
+</html>
