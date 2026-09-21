@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平价抗皱护肤品-高性价比抗衰老护肤指南与产品推荐</title>
+    <meta name="description" content="本站提供专业的平价抗皱护肤品选购指南，涵盖有效成分解析、不同肤质抗老方案以及高性价比热门产品推荐，帮助您用更少的预算实现抗衰老护肤目标。">
+    <meta name="keywords" content="平价抗皱护肤品,高性价比护肤品,抗衰老护肤,眼霜推荐,淡纹精华">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #8B5A2B;
+            --primary-light: #F5E6D3;
+            --secondary-color: #4A4A4A;
+            --accent-color: #D2691E;
+            --bg-color: #FAFAFA;
+            --card-bg: #FFFFFF;
+            --text-main: #333333;
+            --text-light: #666666;
+            --border-radius: 12px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--card-bg);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--secondary-color);
+            font-size: 1rem;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .cta-btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-light) 0%, #fff 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .hero-tags {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: rgba(139, 90, 43, 0.1);
+            color: var(--primary-color);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Problem Section */
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+
+        .section-header p {
+            color: var(--text-light);
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .problem-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .problem-icon {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .problem-card h3 {
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+
+        .problem-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Ingredients Guide */
+        .ingredients-section {
+            background-color: #fff;
+        }
+
+        .ingredient-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .ingredient-card {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            height: 250px;
+            cursor: pointer;
+        }
+
+        .ingredient-card img {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s;
+        }
+
+        .ingredient-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .ingredient-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            padding: 20px;
+            color: white;
+        }
+
+        .ingredient-overlay h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .ingredient-overlay p {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        /* Product Showcase */
+        .products-section {
+            background-color: var(--bg-color);
+        }
+
+        .product-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            padding: 10px 25px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .tab-btn.active, .tab-btn:hover {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-img {
+            height: 200px;
+            background-color: #eee;
+            position: relative;
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: var(--accent-color);
+            color: white;
+            font-size: 0.75rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .product-info {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-cat {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .product-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+
+        .product-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+
+        .product-price {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .product-price small {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            font-weight: 400;
+        }
+
+        .learn-more {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: white;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .faq-question.active::after {
+            content: '-';
+        }
+
+        .faq-answer {
+            color: var(--text-light);
+            display: none;
+            padding-top: 10px;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c2c2c;
+            color: #ccc;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col p {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #444;
+            padding-top: 20px;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+            nav ul {
+                margin: 15px 0;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .ingredient-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .ingredient-grid {
+                grid-template-columns: 1fr;
+            }
+            .product-tabs {
+                gap: 10px;
+            }
+            .tab-btn {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav-wrapper">
+        <a href="#" class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <span>肤研社</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#guide" class="active">护肤指南</a></li>
+                <li><a href="#ingredients">核心成分</a></li>
+                <li><a href="#products">产品推荐</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </nav>
+        <a href="#products" class="cta-btn">查看好物</a>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>平价抗皱护肤品</h1>
+            <p>打破“抗衰老=昂贵”的刻板印象。我们为您筛选高性价比的平价抗皱护肤品，用科学配方和专业测评，帮您有效淡纹紧致，重拾年轻肌态。</p>
+            <div class="hero-tags">
+                <span class="tag">#淡纹精华</span>
+                <span class="tag">#眼霜</span>
+                <span class="tag">#A醇替代</span>
+                <span class="tag">#高保湿</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Analysis -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>为什么你需要抗皱护肤品？</h2>
+                <p>随着年龄增长，肌肤胶原蛋白流失，细纹、干纹逐渐显现。选择正确的平价抗皱护肤品，是延缓衰老的第一步。</p>
+            </div>
+            <div class="problem-grid">
+                <article class="problem-card">
+                    <div class="problem-icon">💧</div>
+                    <h3>干纹细纹</h3>
+                    <p>由于缺水或表情肌频繁牵拉形成的干纹，若不及时干预，容易转化为永久性皱纹。</p>
+                </article>
+                <article class="problem-card">
+                    <div class="problem-icon">📉</div>
+                    <h3>胶原蛋白流失</h3>
+                    <p>25岁后皮肤自我修复能力下降，需要外源性补充活性成分来刺激胶原再生。</p>
+                </article>
+                <article class="problem-card">
+                    <div class="problem-icon">👀</div>
+                    <h3>眼部疲劳</h3>
+                    <p>眼周皮肤最薄，极易出现鱼尾纹和眼袋，眼部护理是抗皱的重点区域。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Guide -->
+    <section id="ingredients" class="section ingredients-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>平价抗皱的核心成分</h2>
+                <p>不必追求大牌溢价，以下成分在平价产品中同样表现出色。</p>
+            </div>
+            <div class="ingredient-grid">
+                <div class="ingredient-card">
+                    <img src="https://picsum.photos/seed/retinol/400/300" alt="视黄醇">
+                    <div class="ingredient-overlay">
+                        <h3>视黄醇</h3>
+                        <p>黄金抗老成分，促进角质代谢，刺激胶原增生。</p>
+                    </div>
+                </div>
+                <div class="ingredient-card">
+                    <img src="https://picsum.photos/seed/peptide/400/300" alt="胜肽">
+                    <div class="ingredient-overlay">
+                        <h3>胜肽</h3>
+                        <p>信号肽，抚平动态纹，温和不刺激。</p>
+                    </div>
+                </div>
+                <div class="ingredient-card">
+                    <img src="https://picsum.photos/seed/vitaminc/400/300" alt="维C">
+                    <div class="ingredient-overlay">
+                        <h3>维C衍生物</h3>
+                        <p>抗氧化，提亮肤色，辅助淡化细纹。</p>
+                    </div>
+                </div>
+                <div class="ingredient-card">
+                    <img src="https://picsum.photos/seed/niacinamide/400/300" alt="烟酰胺">
+                    <div class="ingredient-overlay">
+                        <h3>烟酰胺</h3>
+                        <p>修护屏障，减少泛红，改善肤质粗糙。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section id="products" class="section products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>热门平价抗皱产品推荐</h2>
+                <p>经过成分分析和用户反馈筛选的优质单品。</p>
+            </div>
+
+            <div class="product-tabs">
+                <button class="tab-btn active" onclick="filterProducts('all')">全部</button>
+                <button class="tab-btn" onclick="filterProducts('eye')">眼霜</button>
+                <button class="tab-btn" onclick="filterProducts('serum')">精华</button>
+                <button class="tab-btn" onclick="filterProducts('cream')">面霜</button>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <article class="product-card" data-category="eye">
+                    <div class="product-img">
+                        <span class="product-badge">热销</span>
+                        <img src="https://picsum.photos/seed/eyecream1/300/300" alt="平价眼霜">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">眼部护理</span>
+                        <h3 class="product-title">温和视黄醇眼霜</h3>
+                        <p class="product-desc">含微量A醇与玻色因，专为敏感肌设计的淡纹眼霜，滋润不油腻。</p>
+                        <div class="product-price">¥89 <small>/ 15g</small></div>
+                        <a href="#" class="cta-btn" style="text-align: center; font-size: 0.9rem; padding: 8px;">查看详情</a>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card" data-category="serum">
+                    <div class="product-img">
+                        <img src="https://picsum.photos/seed/serum1/300/300" alt="抗皱精华">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">精华液</span>
+                        <h3 class="product-title">胜肽紧致精华</h3>
+                        <p class="product-desc">高浓度六胜肽，深入肌底修复，改善法令纹和抬头纹。</p>
+                        <div class="product-price">¥128 <small>/ 30ml</small></div>
+                        <a href="#" class="cta-btn" style="text-align: center; font-size: 0.9rem; padding: 8px;">查看详情</a>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card" data-category="cream">
+                    <div class="product-img">
+                        <span class="product-badge">高性价比</span>
+                        <img src="https://picsum.photos/seed/cream1/300/300" alt="抗皱面霜">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">面霜</span>
+                        <h3 class="product-title">维C抗氧化面霜</h3>
+                        <p class="product-desc">复配维C与玻色子，白天防晒前使用，提亮肤色同时抗老。</p>
+                        <div class="product-price">¥159 <small>/ 50g</small></div>
+                        <a href="#" class="cta-btn" style="text-align: center; font-size: 0.9rem; padding: 8px;">查看详情</a>
+                    </div>
+                </article>
+
+                <!-- Product 4 -->
+                <article class="product-card" data-category="eye">
+                    <div class="product-img">
+                        <img src="https://picsum.photos/seed/eyecream2/300/300" alt="咖啡因眼霜">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">眼部护理</span>
+                        <h3 class="product-title">咖啡因消肿眼霜</h3>
+                        <p class="product-desc">针对熬夜浮肿，快速去水肿，淡化黑眼圈。</p>
+                        <div class="product-price">¥69 <small>/ 12g</small></div>
+                        <a href="#" class="cta-btn" style="text-align: center; font-size: 0.9rem; padding: 8px;">查看详情</a>
+                    </div>
+                </article>
+
+                <!-- Product 5 -->
+                <article class="product-card" data-category="serum">
+                    <div class="product-img">
+                        <img src="https://picsum.photos/seed/serum2/300/300" alt="A醇精华">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">精华液</span>
+                        <h3 class="product-title">酵母B5修护精华</h3>
+                        <p class="product-desc">以油养肤，滋润度高，适合干性肌肤的夜间修护。</p>
+                        <div class="product-price">¥119 <small>/ 30ml</small></div>
+                        <a href="#" class="cta-btn" style="text-align: center; font-size: 0.9rem; padding: 8px;">查看详情</a>
+                    </div>
+                </article>
+
+                <!-- Product 6 -->
+                <article class="product-card" data-category="cream">
+                    <div class="product-img">
+                        <img src="https://picsum.photos/seed/cream2/300/300" alt="抗皱面霜">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">面霜</span>
+                        <h3 class="product-title">烟酰胺保湿面霜</h3>
+                        <p class="product-desc">控油清爽，改善粗糙，适合油皮混油皮日常抗老。</p>
+                        <div class="product-price">¥89 <small>/ 40g</small></div>
+                        <a href="#" class="cta-btn" style="text-align: center; font-size: 0.9rem; padding: 8px;">查看详情</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="learn-more">
+                <a href="#" class="cta-btn">浏览更多平价好物</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>平价抗皱护肤常见问题</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">平价护肤品真的有效吗？</div>
+                    <div class="faq-answer">
+                        有效性主要取决于成分。视黄醇、胜肽、玻色因等核心抗老成分在平价品牌中也有广泛应用。只要配方科学、浓度达标，平价产品同样能提供显著的抗皱效果。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">敏感肌可以使用视黄醇吗？</div>
+                    <div class="faq-answer">
+                        敏感肌建议从低浓度或A醇衍生物（如视黄醇棕榈酸酯）开始建立耐受，并配合修护类成分（如神经酰胺、B5）使用，避免过度刺激。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">抗皱护肤品需要多久见效？</div>
+                    <div class="faq-answer">
+                        抗皱是一个长期过程。通常需要连续使用4-8周才能看到肤质改善，坚持使用3个月以上才能观察到明显的细纹淡化效果。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">白天可以使用含A醇的产品吗？</div>
+                    <div class="faq-answer">
+                        含A醇的产品具有光敏性，建议晚上使用。白天使用时，必须严格做好防晒，否则可能加重皮肤老化。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>肤研社</h4>
+                <p>专注于为消费者提供客观、真实的平价护肤产品测评与选购指南。我们致力于打破信息差，让每个人都能享受到科学的护肤体验。</p>
+            </div>
+            <div class="footer-col">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="#guide">护肤指南</a></li>
+                    <li><a href="#ingredients">成分库</a></li>
+                    <li><a href="#products">产品推荐</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>护肤分类</h4>
+                <ul>
+                    <li><a href="#">干性肌肤</a></li>
+                    <li><a href="#">油性肌肤</a></li>
+                    <li><a href="#">敏感肌护理</a></li>
+                    <li><a href="#">男士护肤</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>联系我们</h4>
+                <ul>
+                    <li>邮箱：contact@skinlab.com</li>
+                    <li>电话：400-123-4567</li>
+                    <li>地址：上海市 skincare 科技园 A栋</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 肤研社 SkinLab. All Rights Reserved. 本站内容仅供参考，不构成医疗建议。
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Tab Filtering Logic
+    function filterProducts(category) {
+        const cards = document.querySelectorAll('.product-card');
+        const buttons = document.querySelectorAll('.tab-btn');
+
+        // Update active button
+        buttons.forEach(btn => btn.classList.remove('active'));
+        event.target.classList.add('active');
+
+        // Filter cards
+        cards.forEach(card => {
+            if (category === 'all' || card.dataset.category === category) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    // FAQ Accordion Logic
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', event => {
+            const parent = item.parentElement;
+            const isActive = parent.classList.contains('active');
+            
+            // Close all others
+            document.querySelectorAll('.faq-item').forEach(child => {
+                child.classList.remove('active');
+            });
+
+            // Toggle current
+            if (!isActive) {
+                parent.classList.add('active');
+            }
+        });
+    });
+</script>
+
+</body>
+                      </html>
